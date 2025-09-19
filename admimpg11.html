@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admim Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <section class="form">
+      <button id="abrir-modal-criacao">Nova Vaga</button>
+      <!-- Modal de criação de vaga -->
+<div id="modal-criar" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); 
+justify-content:center; align-items:center;">
+<div style="background:#fff; padding:20px; border-radius:8px; width:300px; position:relative;">
+  <button id="fechar-modal-criacao" style="position:absolute; top:10px; right:10px;">X</button>
+  <form action="" id="criar-vaga">
+    <label for="enterprise">Nome da Empresa</label>
+    <input type="text" name="enterprise" id="enterprise" required>
+    <br>
+    <label for="position">Cargo</label>
+    <input type="text" name="position" id="position" required>
+    <br>
+    <label for="description">Descrição da Vaga</label>
+    <input type="text" name="description" id="description" required>
+    <br>
+    <label for="paiment">Informe o Salário</label>
+    <input type="text" name="paiment" id="paiment" required>
+    <br>
+    <button type="submit">Criar Vaga</button>
+  </form>
+</div>
+</div>
+    </section>
+
+  <section>
+    <!-- Modal de edição -->
+    <div id="modal-editar" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); 
+      justify-content:center; align-items:center;">
+      <div style="background:#fff; padding:20px; border-radius:8px; width:300px; position:relative;">
+        <button id="fechar-modal" style="position:absolute; top:10px; right:10px;">X</button>
+        <form id="form-editar-vaga">
+          <label for="edit-enterprise">Nome da Empresa</label>
+          <input type="text" id="edit-enterprise" required> 
+          <br>
+          <label for="edit-position">Cargo</label>
+          <input type="text" id="edit-position" required>
+          <br>
+          <label for="edit-description">Descrição da Vaga</label>
+          <input type="text" id="edit-description" required>
+          <br>
+          <label for="edit-paiment">Informe o Salário</label>
+          <input type="text" id="edit-paiment" required>
+          <br>
+          <button type="submit">Salvar Alterações</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <main id="vagas">
+    <div id="container-de-vagas">
+
+    </div>
+  </main>
+
+  <footer>
+    <p></p>
+  </footer>
+  <script src="admimpg11.js"></script>
+</body>
+</html>
+
+
+
+    <!--
+  <section class="form">
+    <div class="criacao-vaga">
+        <form action="" id="criar-vaga">
+            <label for="enterprise">Nome da Empresa</label>
+            <input type="text" name="enterprise" id="enterprise">
+            <br>
+            <label for="position">Cargo</label>
+            <input type="text" name="position" id="position">
+            <br>
+            <label for="description">Descrição da Vaga</label>
+            <input type="text" name="description" id="description">
+            <br>
+            <label for="paiment">Informe o Salário</label>
+            <input type="text" name="paiment" id="paiment">
+            <br>
+            <button type="submit">Criar Vaga</button>
+        </form>
+    </div>
+  </section>
+  -->
